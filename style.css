@@ -150,7 +150,6 @@ body, div#RESSubredditGroupDropdown, #search input[type="text"], textarea {
 
 #sr-header-area {
     position: absolute;
-    top: -60px;
     left: -30px;
     width: calc(100% - -60px);
     height: 30px;
@@ -3474,7 +3473,7 @@ body.res-voteEnhancements-highlightScores span.score {
 }
 
 #header .pagename:before {
-    background: url(https://cdn2-resources.ableton.com/80bA26cPQ1hEJDFjpUKntxfqdmG3ZykO/static/images/ableton-hallmark.ef5355379032.svg)
+    background: url(%%ableton-hallmark%%)
 }
 
 /* Multi Column Removed Here */
