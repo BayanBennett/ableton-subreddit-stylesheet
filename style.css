@@ -19,7 +19,7 @@
 }
 
 a, body .generic-table, .res #srList a, #searchexpando a {
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 label, .search-expando-button {
@@ -28,10 +28,10 @@ label, .search-expando-button {
 
 input[type=text], textarea, .hover-bubble.multi-selector .create-multi input[type="text"], input#url {
     box-shadow: none !important;
-    border: 1px solid transparent !important;
+    border: 1px solid #333 !important;
     border-radius: 0 !important;
-    background: #383F47;
-    color: #fff;
+    background: #fff;
+    color: rgba(0,0,0,0.8);
     transition: 0 !important
 }
 
@@ -50,7 +50,7 @@ input[type="checkbox"], input[type=radio], #rem-login-main, .side .titlebox h1.r
     height: 20px;
     border: 0;
     border-radius: 0;
-    background: #383F47 url(%%spritesheet%%) no-repeat 4px -106px/105px 150px;
+    background: #333 url(%%spritesheet%%) no-repeat 4px -106px/105px 150px;
     content: ""
 }
 
@@ -59,7 +59,8 @@ input[type="checkbox"], input[type=radio], #rem-login-main, .side .titlebox h1.r
 }
 
 input[type="checkbox"]:not(:checked), input[type=radio]:not(:checked), #rem-login-main:not(:checked) {
-    background: #383F47
+    background: transparent;
+    border: solid thin #333;
 }
 
 input[type=radio] {
@@ -74,22 +75,22 @@ select {
     border: 0;
     border-radius: 0;
     padding: 5px 22px 5px 8px;
-    background: #383F47 url(%%spritesheet%%) no-repeat 0/105px 150px;
+    background: #fff url(%%spritesheet%%) no-repeat 0/105px 150px;
     background-position: right -88px top -130px;
     font-size: 13px;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 button, .usertext .help-toggle a, .usertext a.reddiquette, .flair-jump button, body #userTaggerToolTip input[type=submit], body #editShortcutDialog [name=shortcut-save], .wiki-page .wiki-page-content .wiki_button {
-    border: 1px solid #fff;
+    border: 1px solid rgba(0,0,0,0.8);
     border-radius: 0;
     padding: 5px 10px;
-    background: #fff;
+    background: rgba(0,0,0,0.8);
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 10px;
     font-weight: 700;
-    color: #32383f;
+    color: #fff;
     transition: .2s
 }
 
@@ -99,13 +100,13 @@ button:hover, .flair-jump button:hover {
 }
 
 button.cancel, button[name="preview"], .usertext .help-toggle a, .usertext a.reddiquette {
-    color: #fff;
+    color: rgba(0,0,0,0.8);
     background: none;
     transition: .2s
 }
 
 button.cancel:hover, button[name="preview"]:hover, .usertext .help-toggle a:hover, .usertext a.reddiquette:hover, .content button.RESBigEditorPop:hover {
-    border: 1px solid #fff;
+    border: 1px solid rgba(0,0,0,0.8);
     background-color: rgba(255, 255, 255, .1)
 }
 
@@ -131,7 +132,7 @@ body, div#RESSubredditGroupDropdown, #search input[type="text"], textarea {
     width: 100%;
     height: 160px;
     border: 0;
-    background-color: #323a47;
+    background-color: #fff;
     background-image: linear-gradient(rgba(50, 58, 71, .65), rgba(50, 58, 71, .65)), url(%%header%%);
     background-position: center top;
     background-size: cover
@@ -154,10 +155,10 @@ body, div#RESSubredditGroupDropdown, #search input[type="text"], textarea {
     width: calc(100% - -60px);
     height: 30px;
     border: 0;
-    background: #fff;
+    background: rgba(0,0,0,0.8);
     white-space: nowrap;
     font-size: 9px;
-    color: #32383f
+    color: #fff
 }
 
 #sr-header-area #srLeftContainer {
@@ -245,13 +246,13 @@ body, div#RESSubredditGroupDropdown, #search input[type="text"], textarea {
     padding: 0 6px;
     line-height: 20px;
     letter-spacing: .5px;
-    color: #32383f
+    color: #fff
 }
 
 #sr-header-area a:not(#sr-more-link):hover, #sr-header-area .dropdown.srdrop .selected:hover, #header #sr-header-area .selected a, .res #sr-header-area a.RESShortcutsCurrentSub {
     background: rgba(50, 58, 71, .1);
     font-weight: 400;
-    color: #32383f !important
+    color: #fff !important
 }
 
 #header #sr-header-area .sr-bar a.gold:hover {
@@ -264,9 +265,9 @@ body, div#RESSubredditGroupDropdown, #search input[type="text"], textarea {
 
 .drop-choices, .res .RESDialogSmall:not(.livePreview), .res #RESNotifications .RESNotification, body #editShortcutDialog, div.guider {
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-    border: 1px solid #434b55;
+    border: 1px solid #fff;
     border-radius: 0;
-    background: #32383F;
+    background: #fff;
     letter-spacing: .5px
 }
 
@@ -303,7 +304,7 @@ body #editShortcutDialog {
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     border: 0;
     padding: 10px !important;
-    background: #32383F;
+    background: #fff;
     text-transform: uppercase;
     letter-spacing: .5px;
     font-size: 9px
@@ -344,7 +345,7 @@ body #editShortcutDialog {
     top: 30px;
     width: 500px;
     height: calc(100vh - 60px);
-    background: #32383F;
+    background: #fff;
     content: "";
     z-index: -1;
     transition: .2s opacity
@@ -365,7 +366,7 @@ body #editShortcutDialog {
     text-transform: lowercase;
     font-size: 40px;
     font-weight: 100;
-    color: #fff;
+    color: rgba(0,0,0,0.8);
     z-index: -2;
     transition: .2s opacity;
     pointer-events: none
@@ -385,10 +386,10 @@ div#RESSubredditGroupDropdown ul {
 #sr-header-area .drop-choices.srdrop a, .res #srList tr, .res #RESSubredditGroupDropdown li a {
     height: 30px;
     padding: 0 10px;
-    border-top: solid 1px #434b55;
+    border-top: solid 1px #fff;
     border-bottom: 0;
     line-height: 30px;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .res #srList thead {
@@ -401,7 +402,7 @@ div#RESSubredditGroupDropdown ul {
     line-height: 50px;
     font-size: 18px;
     font-weight: 700;
-    color: #fff;
+    color: rgba(0,0,0,0.8);
     content: "YOUR SUBREDDITS"
 }
 
@@ -459,7 +460,7 @@ div#RESSubredditGroupDropdown ul {
 
 .res #RESSubredditGroupDropdown li + .RESShortcutsEditButtons, .res #RESSubredditGroupDropdown > .RESShortcutsEditButtons {
     margin: 0;
-    border-top: solid 1px #434b55;
+    border-top: solid 1px #fff;
     padding: 0
 }
 
@@ -470,7 +471,7 @@ div#RESSubredditGroupDropdown ul {
 .res #RESSubredditGroupDropdown .RESShortcutsEditButtons .res-icon {
     display: inline-block;
     margin: 0;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .res #RESSubredditGroupDropdown li + .RESShortcutsEditButtons a.delete {
@@ -502,7 +503,7 @@ a#sr-more-link, .res #RESShortcutsEditContainer {
     height: 20px;
     border-left: 1px solid rgba(0, 0, 0, .1);
     padding-left: 12px;
-    background: #fff
+    background: rgba(0,0,0,0.8)
 }
 
 .res #RESShortcutsEditContainer div {
@@ -513,7 +514,7 @@ a#sr-more-link, .res #RESShortcutsEditContainer {
     background: none;
     line-height: 18px;
     font-weight: 400;
-    color: #32383f
+    color: #fff
 }
 
 #RESShortcutsRight {
@@ -522,7 +523,7 @@ a#sr-more-link, .res #RESShortcutsEditContainer {
 
 #sort-menu p {
     margin-bottom: 5px;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 #header .pagename {
@@ -543,7 +544,7 @@ a#sr-more-link, .res #RESShortcutsEditContainer {
 #header .pagename a {
     font-size: 24px;
     letter-spacing: 10px;
-    color: #fff
+    color: rgba(255,255,255,0.8);
 }
 
 #header .pagename:after {
@@ -553,7 +554,7 @@ a#sr-more-link, .res #RESShortcutsEditContainer {
     font-size: 12px;
     font-weight: 400;
     vertical-align: top;
-    color: #fff;
+    color: rgba(255,255,255,0.8);
     content: "subtitle goes here"
 }
 
@@ -590,7 +591,7 @@ a#sr-more-link, .res #RESShortcutsEditContainer {
     display: block;
     margin: 0;
     padding: 0 10px;
-    background: #fff;
+    background: rgba(0,0,0,0.8);
     font-weight: 400;
     opacity: 0;
     transition: .3s
@@ -611,7 +612,7 @@ a#sr-more-link, .res #RESShortcutsEditContainer {
     border: 0;
     padding: 0 10px;
     line-height: 0;
-    background: #fff;
+    background: rgba(0,0,0,0.8);
     color: transparent;
     -webkit-transition: .3s;
     transition: .3s;
@@ -623,7 +624,7 @@ a#sr-more-link, .res #RESShortcutsEditContainer {
     height: 40px;
     border-top: 1px solid rgba(0, 0, 0, .1);
     line-height: 40px;
-    color: #32383f
+    color: #fff
 }
 
 #header .tabmenu li a:hover, #header .tabmenu:hover li.selected a:hover, #header:target .tabmenu li.selected a:hover {
@@ -645,17 +646,17 @@ a#sr-more-link, .res #RESShortcutsEditContainer {
     border: 0;
     background: none;
     line-height: 40px;
-    color: #fff;
+    color: rgba(0,0,0,0.8);
     opacity: 1;
     transition: .3s color
 }
 
 #header .tabmenu:hover li.selected, #header:target .tabmenu li.selected {
-    background: #fff
+    background: rgba(0,0,0,0.8)
 }
 
 #header .tabmenu:hover li.selected a, #header:target .tabmenu li.selected a {
-    color: #32383f
+    color: #fff
 }
 
 #header .tabmenu li.selected a:after {
@@ -674,7 +675,7 @@ a#sr-more-link, .res #RESShortcutsEditContainer {
     background: none;
     text-transform: uppercase;
     font-size: 11px;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 #header:hover #header-bottom-right:after, #header:target #header-bottom-right:after {
@@ -784,7 +785,7 @@ a#sr-more-link, .res #RESShortcutsEditContainer {
     top: -52px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     padding: 0 20px;
-    background: #fff;
+    background: rgba(0,0,0,0.8);
     white-space: nowrap;
     line-height: 30px;
     text-indent: 0;
@@ -792,7 +793,7 @@ a#sr-more-link, .res #RESShortcutsEditContainer {
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #32383f;
+    color: #fff;
     transition: .2s
 }
 
@@ -855,7 +856,7 @@ a#RESAnnouncementAlert:before {
     height: 1px;
     border: 6px solid transparent;
     border-bottom-width: 0;
-    border-top-color: #fff;
+    border-top-color: rgba(0,0,0,0.8);
     content: "";
     transition: .2s
 }
@@ -901,7 +902,7 @@ a#RESAnnouncementAlert > span {
     border: 0;
     border-radius: 0;
     padding: 10px;
-    background: #fff;
+    background: rgba(0,0,0,0.8);
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 11px
@@ -912,7 +913,7 @@ a#RESAnnouncementAlert > span {
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     line-height: 39px;
     font-weight: 400;
-    color: #32383f
+    color: #fff
 }
 
 .RESDropdownList li:last-of-type {
@@ -921,7 +922,7 @@ a#RESAnnouncementAlert > span {
 
 .res .RESDropdownList li:hover {
     background: rgba(50, 58, 71, .1);
-    color: #32383f
+    color: #fff
 }
 
 .RESDropdownList li:first-of-type, #RESAnnouncementMenuItem {
@@ -930,13 +931,13 @@ a#RESAnnouncementAlert > span {
 
 .RESDropdownList #DashboardLink a {
     background: none;
-    color: #32383f
+    color: #fff
 }
 
 .RESDropdownList #SettingsConsole, #RESAnnouncementMenuItem a {
     padding-left: 10px;
     background: none;
-    color: #32383f
+    color: #fff
 }
 
 .res #RESSearchMenuItem {
@@ -981,9 +982,9 @@ a#RESAnnouncementAlert > span {
 .side {
     margin: 10px 30px 0 0;
     width: 321px;
-    border-left: 1px solid #434b55;
+    border-left: 1px solid #fff;
     padding: 10px;
-    background: #32383f
+    background: #fff
 }
 
 .side .spacer {
@@ -1001,12 +1002,12 @@ a#RESAnnouncementAlert > span {
     height: 40px;
     padding: 0 38px 0 15px;
     font-size: 14px;
-    color: #fff !important
+    color: rgba(0,0,0,0.8) !important
 }
 
 #search input[type="text"]::-webkit-input-placeholder {
     text-transform: capitalize;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 #search input[type=submit], #search input[type=submit]:hover {
@@ -1029,7 +1030,7 @@ a#RESAnnouncementAlert > span {
     background: none;
     line-height: 25px;
     text-align: center;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 #searchexpando label {
@@ -1054,12 +1055,12 @@ label + #moresearchinfo {
 .linkinfo, .login-form-side {
     margin-bottom: 10px;
     border: 0;
-    border-top: 1px solid #434b55;
-    border-bottom: 1px solid #434b55;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     border-radius: 0;
     padding: 10px;
     background: none;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 div.linkinfo .upvotes {
@@ -1127,11 +1128,11 @@ div.linkinfo .downvotes {
     position: relative;
     width: 145px;
     height: 40px;
-    border: 1px solid #fff;
-    background: #fff;
+    border: 1px solid rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.8);
     text-align: center;
     line-height: 40px;
-    color: #32383f;
+    color: #fff;
     transition: .4s;
     z-index: 1
 }
@@ -1142,11 +1143,11 @@ div.linkinfo .downvotes {
 
 .account-activity-box a {
     background: none;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .morelink:hover a, .morelink a:hover {
-    color: #32383f
+    color: #fff
 }
 
 .morelink a:hover, .sidecontentbox a.helplink:hover, .account-activity-box a:hover {
@@ -1228,7 +1229,7 @@ div.linkinfo .downvotes {
     background: rgba(255, 255, 255, .5);
     line-height: 40px;
     font-size: 11px;
-    color: #32383f;
+    color: #fff;
     content: "- - -"
 }
 
@@ -1241,7 +1242,7 @@ div.linkinfo .downvotes {
 }
 
 .side .titlebox {
-    border-top: 1px solid #434b55;
+    border-top: 1px solid #fff;
     color: #999
 }
 
@@ -1249,7 +1250,7 @@ div.linkinfo .downvotes {
     margin-bottom: 10px;
     width: 100%;
     height: 50px;
-    border-bottom: 1px solid #434b55
+    border-bottom: 1px solid #fff
 }
 
 .titlebox h1 a {
@@ -1263,7 +1264,7 @@ div.linkinfo .downvotes {
     letter-spacing: 1px;
     font-size: 14px;
     font-weight: 700;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .side .fancy-toggle-button {
@@ -1378,13 +1379,13 @@ div.linkinfo .downvotes {
 }
 
 .fancy-toggle-button a.option.active.remove, .res .res-fancy-toggle-button.remove, .res .RESFilterToggle.remove {
-    background: #434b55 !important
+    background: #fff !important
 }
 
 .hover-bubble {
-    border: 1px solid #434b55;
-    background: #32383f;
-    color: #fff
+    border: 1px solid #fff;
+    background: #fff;
+    color: rgba(0,0,0,0.8)
 }
 
 .hover-bubble.multi-selector {
@@ -1392,11 +1393,11 @@ div.linkinfo .downvotes {
 }
 
 .hover-bubble.multi-selector strong {
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .hover-bubble.multi-selector label:hover, .drop-choices a.choice:hover {
-    background: #434b55
+    background: #fff
 }
 
 .hover-bubble.multi-selector label a {
@@ -1406,19 +1407,19 @@ div.linkinfo .downvotes {
 }
 
 .hover-bubble.anchor-right:before {
-    border-left-color: #434b55
+    border-left-color: #fff
 }
 
 .hover-bubble.anchor-right:after {
-    border-left-color: #32383f
+    border-left-color: #fff
 }
 
 .hover-bubble.anchor-top:before {
-    border-bottom-color: #434b55
+    border-bottom-color: #fff
 }
 
 .hover-bubble.anchor-top:after {
-    border-bottom-color: #32383f
+    border-bottom-color: #fff
 }
 
 .side .titlebox h1.redditname + div {
@@ -1483,7 +1484,7 @@ div.linkinfo .downvotes {
     box-shadow: none;
     width: 300px !important;
     border: 0;
-    border-top: 1px solid #434b55;
+    border-top: 1px solid #fff;
     padding-top: 0 !important;
     padding-bottom: 0 !important
 }
@@ -1526,7 +1527,7 @@ div.linkinfo .downvotes {
 }
 
 .flairselector li:hover {
-    background: #434b55
+    background: #fff
 }
 
 .flairoptionpane a.title, .flairselector li a.author {
@@ -1540,8 +1541,8 @@ div.linkinfo .downvotes {
     border: 0;
     border-radius: 0;
     padding: 1px 6px;
-    background: #383F47;
-    color: #fff
+    background: #fff;
+    color: rgba(0,0,0,0.8)
 }
 
 .flair {
@@ -1590,19 +1591,19 @@ div.linkinfo .downvotes {
 }
 
 .flairselector form {
-    border-top: 1px solid #434b55
+    border-top: 1px solid #fff
 }
 
 .side .usertext {
     margin-top: 10px;
-    border-top: 1px solid #434b55;
+    border-top: 1px solid #fff;
     font-size: 12px;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .titlebox .bottom {
-    border-top: 1px solid #434b55;
-    border-bottom: 1px solid #434b55;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     padding: 6px 0;
     font-size: 12px;
     color: #999
@@ -1623,7 +1624,7 @@ div.linkinfo .downvotes {
 }
 
 .sidecontentbox {
-    border-bottom: 1px solid #434b55
+    border-bottom: 1px solid #fff
 }
 
 .sidecontentbox .content {
@@ -1637,7 +1638,7 @@ div.linkinfo .downvotes {
 }
 
 body span.score {
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .sidebox.create {
@@ -1656,7 +1657,7 @@ body span.score {
     float: none;
     margin: 0;
     margin-bottom: 10px;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .sidebox.create .morelink a:after {
@@ -1679,7 +1680,7 @@ body span.score {
 .side:after {
     display: block;
     margin-top: 10px;
-    border-top: 1px solid #434b55;
+    border-top: 1px solid #fff;
     padding-top: 10px;
     font-size: 12px;
     color: #999;
@@ -1709,8 +1710,8 @@ body > .content, .res.res-commentBoxes body > .content, .modtools-page > div.con
     margin: 0 0 0 30px;
     width: calc(100% - 381px);
     padding: 0 10px !important;
-    background: #32383f;
-    color: #fff
+    background: #fff;
+    color: rgba(0,0,0,0.8)
 }
 
 body > .content > .content {
@@ -1732,7 +1733,7 @@ body > .content:before, .reddit-infobar {
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #fff;
+    color: rgba(0,0,0,0.8);
     content: ""
 }
 
@@ -1754,7 +1755,7 @@ body > .content:before {
 
 .reddit-infobar {
     margin-bottom: -1px;
-    border-bottom: 1px solid #434b55;
+    border-bottom: 1px solid #fff;
     padding: 0 10px;
     background: none
 }
@@ -1762,7 +1763,7 @@ body > .content:before {
 .reddit-infobar .md {
     display: inline-block;
     margin: auto 0;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .reddit-infobar.md-container-small .md p {
@@ -1775,7 +1776,7 @@ body > .content:before {
 
 #siteTable_organic.organic-listing {
     border: 0;
-    border-bottom: 1px solid #434b55;
+    border-bottom: 1px solid #fff;
     background: none !important
 }
 
@@ -1786,7 +1787,7 @@ body > .content:before {
     width: 50%;
     padding: 10px 0;
     border: 0;
-    border-top: 1px solid #434b55;
+    border-top: 1px solid #fff;
     vertical-align: top
 }
 
@@ -1800,13 +1801,13 @@ body > .content:before {
 }
 
 .link.odd {
-    border-right: 1px solid #434b55;
+    border-right: 1px solid #fff;
     padding-right: 10px
 }
 
 .link.even {
     margin-left: -1px;
-    border-left: 1px solid #434b55
+    border-left: 1px solid #fff
 }
 
 .link.even .entry {
@@ -1842,7 +1843,9 @@ body > .content .link.even.thing .midcol {
 .arrow {
     width: 25px;
     height: 25px;
-    background: url(%%spritesheet%%) !important
+    border-radius: 50%;
+    background-image: url(%%spritesheet%%) !important;
+    background-color: #eee;
 }
 
 .arrow.up {
@@ -1918,7 +1921,7 @@ a.thumbnail[href*="reddit.com"] {
 }
 
 .thumbnail.self, .link :not(.thumbnail) + .entry:before, .thumbnail.default {
-    background: #434b55
+    background: #fff
 }
 
 .over18 .thumbnail.nsfw {
@@ -1978,7 +1981,7 @@ body .self.thumbnail:after {
 }
 
 .res .RES-keyNav-activeElement, .subreddit-rule-item:hover {
-    background-color: #434b55 !important
+    background-color: #fff !important
 }
 
 .res .commentarea .RES-keyNav-activeElement .md, .res .RES-keyNav-activeElement .md-container {
@@ -1993,7 +1996,7 @@ body .self.thumbnail:after {
     margin: 0;
     font-size: 14px;
     font-weight: 700;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .spam .domain, .spam .domain a {
@@ -2015,7 +2018,7 @@ body .self.thumbnail:after {
 body.mod-toolbox .tb-general-button, body.mod-toolbox li a.tb-general-button, body.mod-toolbox .tb-bracket-button {
     border: 0;
     padding: 3px;
-    background: #383F47
+    background: #fff
 }
 
 .md h1:after {
@@ -2023,7 +2026,7 @@ body.mod-toolbox .tb-general-button, body.mod-toolbox li a.tb-general-button, bo
     margin: 7px 0;
     width: 50px;
     height: 1px;
-    background: #fff;
+    background: rgba(0,0,0,0.8);
     content: "";
     transition: .2s
 }
@@ -2057,7 +2060,7 @@ html body .content .expando-button {
     top: 13.5px;
     width: 12px;
     height: 1px;
-    background: #fff;
+    background: rgba(0,0,0,0.8);
     content: "";
     transition: .3s
 }
@@ -2077,7 +2080,7 @@ html body .expando-button.expanded:after {
 .link.self .entry > .expando-button.collapsed:after {
     top: 10px;
     height: 9px;
-    border: 1px solid #fff;
+    border: 1px solid rgba(0,0,0,0.8);
     border-left: 0;
     border-right: 0;
     background: none;
@@ -2108,7 +2111,7 @@ html body .expando-button.expanded:after {
 
 .entry .buttons li.reported-stamp, ul.report-reasons {
     border: 0 !important;
-    color: #000
+    color: rgba(255,255,255,0.8)
 }
 
 a.pretty-button {
@@ -2116,7 +2119,7 @@ a.pretty-button {
     border-radius: 0;
     padding: 0 6px;
     line-height: 1.6em;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .pretty-button.negative {
@@ -2133,7 +2136,7 @@ a.pretty-button {
 }
 
 body .content a.pretty-button.pressed {
-    background: #21252a
+    background: #fff
 }
 
 a.pretty-button + li {
@@ -2154,7 +2157,7 @@ body .thing .tagline .author.moderator, body .thing .tagline .author.submitter, 
     border-radius: 0;
     padding: 1px 6px;
     font-weight: 400;
-    color: #fff !important
+    color: rgba(0,0,0,0.8) !important
 }
 
 body .thing .tagline .author.submitter, body .thing .tagline .author.submitter:hover, .tagline .userattrs a.submitter {
@@ -2201,7 +2204,7 @@ body .thing .tagline .author.admin, body .thing .tagline .author.admin:hover, .t
 }
 
 .tagline .userattrs a {
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .link .entry .buttons li a:hover, .link .redditSingleClick:hover {
@@ -2231,7 +2234,7 @@ span.newComments, form.state-button.approve-button {
     border: 0;
     border-radius: 0;
     padding: 10px;
-    background: #32383f
+    background: #fff
 }
 
 @media ( max-width: 1700px) {
@@ -2248,7 +2251,7 @@ span.newComments, form.state-button.approve-button {
     }
 
     .link:nth-of-type(2) {
-        border-top: 1px solid #434b55
+        border-top: 1px solid #fff
     }
 
     body > .content[role="main"] .link.thing .midcol {
@@ -2261,7 +2264,7 @@ span.newComments, form.state-button.approve-button {
 }
 
 .nav-buttons {
-    border-top: 1px solid #434b55;
+    border-top: 1px solid #fff;
     padding: 10px 0;
     font-size: 0
 }
@@ -2272,10 +2275,10 @@ span.newComments, form.state-button.approve-button {
     border: 0;
     border-radius: 0;
     padding: 10px;
-    background: #fff;
+    background: rgba(0,0,0,0.8);
     text-transform: uppercase;
     font-size: 11px;
-    color: #32383f;
+    color: #fff;
     transition: .2s
 }
 
@@ -2289,11 +2292,11 @@ span.newComments, form.state-button.approve-button {
     width: 100%;
     height: auto;
     border: 0;
-    border-top: 1px solid #434b55;
+    border-top: 1px solid #fff;
     border-radius: 0;
     padding: 10px;
     background: none;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .res #progressIndicator p.NERWidgetText {
@@ -2347,7 +2350,7 @@ span.newComments, form.state-button.approve-button {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 700;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .footer .col li {
@@ -2360,18 +2363,18 @@ span.newComments, form.state-button.approve-button {
     letter-spacing: 2px;
     font-size: 10px;
     opacity: .4;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .footer-parent p.bottommenu:nth-of-type(1) {
-    border-top: solid 1px #434b55;
+    border-top: solid 1px #fff;
     padding-top: 25px;
     padding-bottom: 25px
 }
 
 .bottommenu a, .bottommenu .updated {
-    border-bottom: 1px dotted #fff;
-    color: #fff
+    border-bottom: 1px dotted rgba(0,0,0,0.8);
+    color: rgba(0,0,0,0.8)
 }
 
 .footer-parent + img#hsts_pixel {
@@ -2379,7 +2382,7 @@ span.newComments, form.state-button.approve-button {
 }
 
 .md {
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -2388,7 +2391,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     font-size: 11px !important;
     font-weight: 700 !important;
-    color: #fff !important
+    color: rgba(0,0,0,0.8) !important
 }
 
 .res .RESNotificationHeader h3 {
@@ -2426,7 +2429,7 @@ h2, .sidecontentbox .title h1 {
 }
 
 .sidecontentbox a.helplink + .title {
-    border-top: 1px solid #434b55
+    border-top: 1px solid #fff
 }
 
 .md del {
@@ -2437,13 +2440,13 @@ h2, .sidecontentbox .title h1 {
 .new-comment .md :not(pre) > code, .link .md :not(pre) > code, .usertext.border .md :not(pre) > code, .new-comment .md pre, .link .md pre, .usertext.border .md pre, .md code, .md pre {
     border: 0;
     padding: 5px;
-    background: #383F47;
+    background: #fff;
     font-family: "Courier New", monospace
 }
 
 .md a, .search-result .search-result-body :link, .search-result .search-result-body :link > mark {
     border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
-    color: #fff;
+    color: rgba(0,0,0,0.8);
     transition: .2s
 }
 
@@ -2459,21 +2462,21 @@ body .comment .md p > a:visited, body h2 a:visited {
 .md hr, .content hr {
     height: 1px;
     border: 0;
-    background: #434b55
+    background: #fff
 }
 
 .md blockquote {
-    border-left: solid 4px #434b55;
+    border-left: solid 4px #fff;
     padding: 10px;
     padding-left: 30px;
     font-style: italic;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .md a[href="#bigbutton"] + a, .md a[href="#button"] + a, .md a[href="#specialbutton"] + a, .md a[href="#bigspecialbutton"] + a {
     display: inline-block;
     margin: 10px;
-    border: 1px solid #fff;
+    border: 1px solid rgba(0,0,0,0.8);
     padding: 10px 20px;
     letter-spacing: 1px;
     text-align: center;
@@ -2483,7 +2486,7 @@ body .comment .md p > a:visited, body h2 a:visited {
 }
 
 .md a[href="#bigbutton"] + a, .md a[href="#button"] + a {
-    color: #fff !important
+    color: rgba(0,0,0,0.8) !important
 }
 
 .md a[href="#bigbutton"] + a:hover, .md a[href="#button"] + a:hover {
@@ -2491,8 +2494,8 @@ body .comment .md p > a:visited, body h2 a:visited {
 }
 
 .md a[href="#specialbutton"] + a, .md a[href="#bigspecialbutton"] + a {
-    background: #fff;
-    color: #32383f !important
+    background: rgba(0,0,0,0.8);
+    color: #fff !important
 }
 
 .md a[href="#specialbutton"] + a:hover, .md a[href="#bigspecialbutton"] + a:hover {
@@ -2517,11 +2520,11 @@ body .comment .md p > a:visited, body h2 a:visited {
 }
 
 .md table tr {
-    border-bottom: 1px solid #434b55
+    border-bottom: 1px solid #fff
 }
 
 .md table tr:nth-of-type(odd) {
-    background: #383F47
+    background: #fff
 }
 
 .md table thead tr {
@@ -2536,12 +2539,12 @@ body .comment .md p > a:visited, body h2 a:visited {
 .md a[href$="/spoiler"], .md a[href$="#spoiler"], .md a[href$="/s"], .md a[href$="#s"] {
     border: 0;
     padding: 0 5px;
-    background: #262b31 !important;
-    color: #262b31 !important
+    background: #fff !important;
+    color: #fff !important
 }
 
 .md a[href$="/spoiler"]:hover, .md a[href$="#spoiler"]:hover, .md a[href$="/s"]:hover, .md a[href$="#s"]:hover {
-    color: #fff !important
+    color: rgba(0,0,0,0.8) !important
 }
 
 .wiki-page > .content[role="main"] > span {
@@ -2572,11 +2575,11 @@ body .comment .md p > a:visited, body h2 a:visited {
 }
 
 .wiki-page .pageactions .wikiaction-current, .wiki-page .pageactions .wikiaction:hover {
-    background: #434b55
+    background: #fff
 }
 
 .wiki-page .wiki-page-content .wiki > .toc > ul {
-    border: 1px solid #434b55
+    border: 1px solid #fff
 }
 
 .search-page #header .tabmenu {
@@ -2597,13 +2600,13 @@ body .comment .md p > a:visited, body h2 a:visited {
     border: 0;
     background: none;
     line-height: 60px;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .searchpane {
     margin: 0;
     border: 0;
-    border-bottom: 1px solid #434b55;
+    border-bottom: 1px solid #fff;
     padding: 0;
     padding-bottom: 10px;
     background: none
@@ -2613,7 +2616,7 @@ body .comment .md p > a:visited, body h2 a:visited {
     margin: 0;
     box-shadow: none;
     border: 0;
-    border-bottom: 1px solid #434b55;
+    border-bottom: 1px solid #fff;
     background: none
 }
 
@@ -2637,7 +2640,7 @@ button.search-submit-button.c-btn.c-btn-primary {
 }
 
 .search-result-group-header {
-    border-bottom: 1px solid #434b55
+    border-bottom: 1px solid #fff
 }
 
 .search-expando.collapsed:before {
@@ -2645,7 +2648,7 @@ button.search-submit-button.c-btn.c-btn-primary {
 }
 
 .search-result :link, .search-result :link > mark {
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .archived-infobar.with-icon:before {
@@ -2653,15 +2656,15 @@ button.search-submit-button.c-btn.c-btn-primary {
 }
 
 .panestack-title {
-    border-top: 1px solid #434b55
+    border-top: 1px solid #fff
 }
 
 .panestack-title, .menuarea {
     vertical-align: middle;
     margin: 0;
     padding: 9.5px;
-    border-bottom: 1px solid #434b55;
-    color: #fff
+    border-bottom: 1px solid #fff;
+    color: rgba(0,0,0,0.8)
 }
 
 .panestack-title a.title-button.gold {
@@ -2678,7 +2681,7 @@ button.search-submit-button.c-btn.c-btn-primary {
 .commentarea .menuarea, .commentarea .menuarea .toggle a {
     font-size: 12px;
     font-weight: 400;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .dropdown.lightdrop .selected {
@@ -2686,7 +2689,7 @@ button.search-submit-button.c-btn.c-btn-primary {
     text-transform: uppercase;
     font-size: 9px;
     font-weight: 400;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .dropdown.lightdrop .selected:after {
@@ -2700,12 +2703,12 @@ button.search-submit-button.c-btn.c-btn-primary {
     padding: 5px;
     background: #c4918a;
     text-transform: uppercase;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .res .RESSubscriptionButton.unsubscribe {
-    background: #434b55;
-    color: #fff
+    background: #fff;
+    color: rgba(0,0,0,0.8)
 }
 
 .commentarea .commentNavSortType {
@@ -2732,7 +2735,7 @@ button.search-submit-button.c-btn.c-btn-primary {
 
 .new-comment .usertext-body, .usertext.border .usertext-body {
     border: 0;
-    background: #434b55
+    background: #fff
 }
 
 .infobar {
@@ -2754,7 +2757,7 @@ button.search-submit-button.c-btn.c-btn-primary {
 .res.res-commentBoxes .comment, .comment {
     overflow: hidden;
     margin-bottom: 0 !important;
-    border: 1px solid #434b55 !important;
+    border: 1px solid #fff !important;
     border-right: 0 !important;
     border-bottom: 0 !important;
     padding: 0 !important;
@@ -2775,7 +2778,7 @@ button.search-submit-button.c-btn.c-btn-primary {
 
 .morechildren, .deleted.comment {
     margin-left: 10px;
-    border: 1px solid #434b55;
+    border: 1px solid #fff;
     border-right: 0;
     border-bottom: 0;
     padding-bottom: 8px
@@ -2886,7 +2889,7 @@ button.search-submit-button.c-btn.c-btn-primary {
     width: auto;
     border: 0;
     background: none;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .roundfield span.title, .linefield .title {
@@ -2894,11 +2897,11 @@ button.search-submit-button.c-btn.c-btn-primary {
     letter-spacing: 1px;
     font-size: 11px;
     font-weight: 700;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 #newlink-with-image-upload div#new-link-preview, #newlink-with-image-upload span.clear-input-button {
-    background: #434b55
+    background: #fff
 }
 
 #newlink-with-image-upload div#suggest-title {
@@ -2920,7 +2923,7 @@ button.search-submit-button.c-btn.c-btn-primary {
     width: 25px;
     height: 25px;
     border: 12.5px solid transparent;
-    border-bottom-color: #434b55;
+    border-bottom-color: #fff;
     content: ""
 }
 
@@ -2969,12 +2972,12 @@ body .markdownEditor-wrapper {
 }
 
 .commentingAs {
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 body .markdownEditor .edit-btn:not(.btn-macro) {
     border: 0;
-    background-color: #434b55;
+    background-color: #fff;
     background-image: url(%%editbuttons%%)
 }
 
@@ -2992,17 +2995,17 @@ a.edit-btn {
 }
 
 body:not(.res) .usertext .help-toggle a {
-    border-right: 1px solid #fff !important
+    border-right: 1px solid rgba(0,0,0,0.8) !important
 }
 
 .content button.RESBigEditorPop {
     margin-top: 5px;
     margin-left: 0;
-    border-color: #fff;
+    border-color: rgba(0,0,0,0.8);
     padding: 5px 10px;
     background: none;
     text-indent: 0;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 div.BEFoot button {
@@ -3014,18 +3017,18 @@ div.BEFoot button {
 }
 
 .res .RESDialogSmall {
-    border: 1px solid #434b55;
+    border: 1px solid #fff;
     border-radius: 0
 }
 
 .res .RESDialogSmall > h3, .res .RESNotificationHeader, .res #RESConsoleTopBar.RESDialogTopBar {
     margin-bottom: 0;
     height: 40px;
-    border-bottom: 1px solid #434b55;
+    border-bottom: 1px solid #fff;
     padding-top: 0;
     padding-bottom: 0;
     line-height: 40px;
-    background: #434b55
+    background: #fff
 }
 
 .res #RESConsoleTopBar.RESDialogTopBar {
@@ -3035,11 +3038,11 @@ div.BEFoot button {
 body .livePreview .md {
     margin: 0;
     padding-top: 10px;
-    background: repeating-linear-gradient(-45deg, #32383f, #32383f 40px, #2e333a 40px, #2e333a 80px)
+    background: repeating-linear-gradient(-45deg, #fff, #fff 40px, #fff 40px, #fff 80px)
 }
 
 body .viewSource textarea[readonly] {
-    background: repeating-linear-gradient(-45deg, #32383f, #32383f 40px, #2e333a 40px, #2e333a 80px)
+    background: repeating-linear-gradient(-45deg, #fff, #fff 40px, #fff 40px, #fff 80px)
 }
 
 .pretty-form .save-button button, .submit.content button[type="submit"] {
@@ -3083,14 +3086,14 @@ body .viewSource textarea[readonly] {
     height: 20px;
     border: 0;
     border-radius: 50%;
-    background: #383F47;
+    background: #fff;
     line-height: 20px;
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .res .RESCloseButton:hover {
     border: 0;
-    background: #434b55
+    background: #fff
 }
 
 .sheets {
@@ -3098,7 +3101,7 @@ body .viewSource textarea[readonly] {
 }
 
 .stylesheet-customize-container #images {
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 form#image-upload.image-upload {
@@ -3121,22 +3124,22 @@ ul.image-preview-list li {
     margin: 0;
     width: 50%;
     height: auto;
-    border-top: 1px solid #434b55;
+    border-top: 1px solid #fff;
     padding: 10px;
-    background: #32383f
+    background: #fff
 }
 
 ul.image-preview-list li:nth-of-type(even) {
-    border-right: 1px solid #434b55
+    border-right: 1px solid #fff
 }
 
 ul.image-preview-list li:nth-of-type(odd) {
     margin-left: -1px;
-    border-left: 1px solid #434b55
+    border-left: 1px solid #fff
 }
 
 ul.image-preview-list .description pre {
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .subreddit-rules-page:before {
@@ -3149,7 +3152,7 @@ ul.image-preview-list .description pre {
 }
 
 .subreddit-rule-form .c-form-group .label.required:after {
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .subreddit-rule-form .form-buttons > button {
@@ -3165,14 +3168,14 @@ ul.image-preview-list .description pre {
 }
 
 .messages-page > .content {
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .message .subject .correspondent {
     border: 0;
     border-radius: 0;
     padding: 5px 8px;
-    background: #434b55
+    background: #fff
 }
 
 .flat-list li.selected a {
@@ -3184,7 +3187,7 @@ ul.image-preview-list .description pre {
 }
 
 .message.recipient > .entry {
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .message.message-reply.recipient > .entry .head, .message.message-parent.recipient > .entry .head {
@@ -3192,7 +3195,7 @@ ul.image-preview-list .description pre {
 }
 
 .message.threaded .child {
-    border-left: 1px dashed #434b55
+    border-left: 1px dashed #fff
 }
 
 .thing.spam {
@@ -3202,7 +3205,7 @@ ul.image-preview-list .description pre {
 
 .message.new > .entry {
     border: 0;
-    background: #434b55
+    background: #fff
 }
 
 .flair-settings + .tabmenu {
@@ -3247,8 +3250,8 @@ ul.image-preview-list .description pre {
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
     border: 0;
     border-radius: 0;
-    background: #32383f;
-    color: #fff
+    background: #fff;
+    color: rgba(0,0,0,0.8)
 }
 
 .res #addSubreddit {
@@ -3257,7 +3260,7 @@ ul.image-preview-list .description pre {
 }
 
 .res .res #authorInfoToolTip:before, .res .res #authorInfoToolTip:after {
-    border-color: transparent #434b55
+    border-color: transparent #fff
 }
 
 .res .RESDialogSmall .RESDialogContents {
@@ -3265,11 +3268,11 @@ ul.image-preview-list .description pre {
 }
 
 .res .res #RESHoverContainer:before, .res .RESHoverInfoCard:before {
-    border-color: transparent #434b55
+    border-color: transparent #fff
 }
 
 .res .res #RESHoverContainer:after, .res .RESHoverInfoCard:after {
-    border-color: transparent #434b55
+    border-color: transparent #fff
 }
 
 div.guider .guider_content p, .res .RESNotificationContent {
@@ -3277,8 +3280,8 @@ div.guider .guider_content p, .res .RESNotificationContent {
 }
 
 .res .RESNotificationContent {
-    border-top: 1px solid #434b55;
-    border-bottom: 1px solid #434b55
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff
 }
 
 input#disableDailyTipsCheckbox {
@@ -3296,7 +3299,7 @@ body .blueButton, a.guider_button {
 }
 
 body.res-voteEnhancements-highlightScores span.score {
-    color: #fff
+    color: rgba(0,0,0,0.8)
 }
 
 .side .md > blockquote:nth-of-type(1) {
@@ -3340,7 +3343,7 @@ body.res-voteEnhancements-highlightScores span.score {
         width: 280px;
         border: 0;
         padding: 15px;
-        background: #fff;
+        background: rgba(0,0,0,0.8);
         text-align: center;
         line-height: 15px;
         font-style: normal
@@ -3348,12 +3351,12 @@ body.res-voteEnhancements-highlightScores span.score {
 
     .footer-parent {
         margin-top: 0;
-        border-top: 1px solid #434b55;
-        background: #32383f
+        border-top: 1px solid #fff;
+        background: #fff
     }
 
     .footer-parent ~ .debuginfo {
-        background: #32383f
+        background: #fff
     }
 
     #header:target + .side .md > blockquote:nth-of-type(1) {
@@ -3364,7 +3367,7 @@ body.res-voteEnhancements-highlightScores span.score {
         display: block;
         margin-bottom: 10px;
         font-weight: 700;
-        color: #32383f;
+        color: #fff;
         content: "Using a mobile device?"
     }
 
@@ -3372,10 +3375,10 @@ body.res-voteEnhancements-highlightScores span.score {
         position: absolute;
         left: 0;
         bottom: -20px;
-        border-top: 10px solid #fff;
+        border-top: 10px solid rgba(0,0,0,0.8);
         border-right: 10px solid transparent;
         border-bottom: 10px solid transparent;
-        border-left: 10px solid #fff;
+        border-left: 10px solid rgba(0,0,0,0.8);
         content: ""
     }
 
@@ -3430,7 +3433,7 @@ body.res-voteEnhancements-highlightScores span.score {
     margin-left: -40px;
     width: 80px;
     height: 1px;
-    background: #fff;
+    background: rgba(255,255,255,0.8);
     content: ""
 }
 
@@ -3472,9 +3475,9 @@ body.res-voteEnhancements-highlightScores span.score {
     content: "The Place for Ableton Tips and Tricks"
 }
 
-#header .pagename:before {
-    background: url(%%ableton-hallmark%%)
-}
+/*#header .pagename:before {*/
+    /*background: url(%%ableton-hallmark%%)*/
+/*}*/
 
 /* Multi Column Removed Here */
 
